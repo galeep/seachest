@@ -26,6 +26,8 @@ agi unzip
 agi golang
 agi git
 agi ansible # FIXME: pin to version
+agi virtualbox
+agi vagrant
 
 # get hashicorp tools
 # TODO: move to a more structured mechanism
