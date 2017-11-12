@@ -1,8 +1,13 @@
 #!/bin/bash
 
-# Bootstrap basic box
-# curl things that curl other things :( 
+# Bootstrap basic box with configuration and provisioning tools
 
+# I'm not a big fan of the "let's curl things and run them" 
+# pattern. But life is a series of continuous improvements.
+
+# Use real ansible or ppa ansible? 
+# Use ppa ansible for now
+sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt-get update
 sudo apt-get upgrade
 
@@ -19,6 +24,11 @@ function hashiget() {
 
 agi unzip
 agi golang
+agi git
+agi ansible # FIXME: pin to version
+
+# get hashicorp tools
+# TODO: move to a more structured mechanism
 
 GIST_URL="https://gist.githubusercontent.com/galeep/4e00cb262d73674e787444bd63714080/raw/488fb75c16e4500ba10218291226cdc376511261/install_hashicorp_app.sh"
 
