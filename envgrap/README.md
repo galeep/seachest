@@ -1,11 +1,17 @@
 # envgrap
 
 Collect env vars specified in a template, and emit json.
-I honestly can't recall the requirement that spawned this.
-There had to be more to the problem at hand. 
+
+We encountered a situation where simply getting the 
+environment from a shell was not feasible (or possible.) 
+This may have been livecoded to illustrate how to 
+accomplish the same task without shelling out. 
+There was a point, but it has been lost to time. 
+
 Uncommented, unfinished, and left here as an oddity.
 
-Given fakejson.tpl: 
+Given a template fakejson.tpl, something we might 
+ordinarily process with a one-liner: 
 
 ```
 {
@@ -26,4 +32,3 @@ Produce something like:
   }
 ]
 ```
-
